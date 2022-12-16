@@ -31,11 +31,16 @@ async function selectFolder() {
 
 <template>
   <v-container class="fill-height">
-    <v-row justify="space-between" align="center">
+    <v-row v-if="!results">
+      <v-col cols="12" align="center">
+        <v-btn @click="selectFolder" color="primary">Open Folder</v-btn>
+      </v-col>
+    </v-row>
+    <v-row justify="space-between" v-if="results">
       <v-col class="text-h3">
         {{ folder }}
       </v-col>
-      <v-col cols="1">
+      <v-col cols="4" align="right">
         <v-btn @click="selectFolder" color="primary">Open</v-btn>
       </v-col>
     </v-row>
