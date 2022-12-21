@@ -1,7 +1,41 @@
-# Tauri + Vue 3
+# PhpSniffer
 
-This template should help get you started developing with Tauri + Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## A Visual PHP Coding style checker
 
-## Recommended IDE Setup
+### built with [Tauri](https://tauri.app), [Vue](https://vuejs.org) and [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## Features
+
+- specify coding standard to use. Currently supports:
+
+    - MySource
+    - PEAR
+    - PSR1
+    - PSR2
+    - PSR12 (selected by default)
+    - Squiz
+    - Zend
+- output a by-file summary of coding violations
+- provide a general summary of total errors and warnings
+
+## Prerequisites
+
+- Make sure to have a php version installed in your system, otherwise the application will not even start
+- Make sure the `php -v` command can be executed in your system shell
+
+## Installation
+
+- go to the [latest release](https://github.com/matfire/phpsniffer/releases/latest)
+- download the file appropriate for your operating system
+- install and execute the file
+
+## Tech Stack
+
+- Tauri
+- VueJS
+  - Vuetify 3
+  - Pinia
+
+## Contributing
+
+*WIP*
